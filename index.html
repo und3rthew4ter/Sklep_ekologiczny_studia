@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="pl">
+<!-- Podstawowe -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Metadane mobilne -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Metadane strony -->
+    <title>Freshshop - Szablon HTML Bootstrap 4 Ecommerce</title>
+    <meta name="keywords" content="sklep ekologiczny, zdrowa żywność, produkty organiczne">
+    <meta name="description" content="Freshshop to sklep oferujący szeroki wybór produktów ekologicznych i organicznych. Dbamy o naturę i jakość naszej oferty, aby każdy mógł cieszyć się zdrowymi produktami.">
+    <meta name="author" content="">
+
+    <!-- Ikony strony -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- CSS strony -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- CSS responsywne -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Własny CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- Górna część główna -->
+    <div class="main-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="custom-select-box">
+                        <select id="basic" class="selectpicker show-tick form-control" data-placeholder="PLN">
+							<option>¥ JPY</option>
+							<option>$ USD</option>
+							<option>€ EUR</option>
+						</select>
+                    </div>
+                    <div class="right-phone-box">
+                        <p>Zadzwoń do nas: <a href="#">+48 900 800 100</a></p>
+                    </div>
+                    <div class="our-link">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-user s_color"></i> Moje konto</a></li>
+                            <li><a href="#"><i class="fas fa-location-arrow"></i> Nasza lokalizacja</a></li>
+                            <li><a href="#"><i class="fas fa-headset"></i> Kontakt</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="login-box">
+						<select id="basic" class="selectpicker show-tick form-control" data-placeholder="Zaloguj się">
+							<option>Zarejestruj się</option>
+							<option>Zaloguj się</option>
+						</select>
+					</div>
+                    <div class="text-slid-box">
+                        <div id="offer-box" class="carouselTicker">
+                            <ul class="offer-box">
+                                <li>
+                                    <i class="fab fa-opencart"></i> 20% zniżki na cały zakup! Kod promocyjny: ZDROWO20
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> 50% - 80% taniej na warzywa
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> 10% zniżki na zakup warzyw
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> 50% zniżki! Kup teraz
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Koniec górnej części głównej -->
+
+    <!-- Nagłówek -->
+    <header class="main-header">
+        <!-- Nawigacja -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+            <div class="container">
+                <!-- Nawigacja nagłówka -->
+                <div class="navbar-header">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="logo" alt="Logo sklepu ekologicznego"></a>
+                </div>
+
+                <!-- Linki nawigacyjne -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li class="nav-item active"><a class="nav-link" href="index.html">Strona główna</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">O nas</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">Sklep</a>
+                            <ul class="dropdown-menu">
+								<li><a href="shop.html">Sidebar Sklep</a></li>
+								<li><a href="shop-detail.html">Szczegóły produktu</a></li>
+                                <li><a href="cart.html">Koszyk</a></li>
+                                <li><a href="checkout.html">Zamówienie</a></li>
+                                <li><a href="my-account.html">Moje konto</a></li>
+                                <li><a href="wishlist.html">Lista życzeń</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Galeria</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact-us.html">Kontakt</a></li>
+                    </ul>
+                </div>
+
+                <!-- Nawigacja atrybutów -->
+                <div class="attr-nav">
+                    <ul>
+                        <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+                        <li class="side-menu">
+							<a href="#">
+								<i class="fa fa-shopping-bag"></i>
+								<span class="badge">3</span>
+								<p>Koszyk</p>
+							</a>
+						</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Koniec nagłówka -->
+
+    <!-- Rozpocznij wyszukiwanie -->
+    <div class="top-search">
+        <div class="container">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                <input type="text" class="form-control" placeholder="Szukaj">
+                <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+            </div>
+        </div>
+    </div>
+    <!-- Koniec wyszukiwania -->
+
+    <!-- Rozpocznij slider -->
+    <div id="slides-shop" class="cover-slides">
+        <ul class="slides-container">
+            <li class="text-center">
+                <img src="images/banner-01.jpg" alt="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="m-b-20"><strong>Witamy w<br> Sklepie ekologicznym</strong></h1>
+                            <p class="m-b-40">Odkryj naturalne produkty w naszym sklepie, które pomogą Ci dbać o zdrowie i środowisko.</p>
+                            <p><a class="btn hvr-hover" href="#">Nowości</a></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="text-center">
+                <img src="images/banner-02.jpg" alt="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="m-b-20"><strong>Witamy w<br> Freshshop</strong></h1>
+                            <p class="m-b-40">Wybieraj z naszej szerokiej oferty produktów ekologicznych, idealnych dla zdrowego stylu życia.</p>
+                            <p><a class="btn hvr-hover" href="#">Nowości</a></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="text-center">
+                <img src="images/banner-03.jpg" alt="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="m-b-20"><strong>Witamy w<br> Freshshop</strong></h1>
+                            <p class="m-b-40">Poczuj smak natury w każdym produkcie - nasze produkty są wyselekcjonowane, aby zapewnić najwyższą jakość.</p>
+                            <p><a class="btn hvr-hover" href="#">Nowości</a></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="slides-navigation">
+            <a href="#" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            <a href="#" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <!-- Koniec slidera -->
+
+    <!-- Kategorie produktów -->
+    <div class="categories-shop">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box">
+                        <img class="img-fluid" src="images/categories_img_01.jpg" alt="" />
+                        <a class="btn hvr-hover" href="#">Świeże warzywa</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box">
+                        <img class="img-fluid" src="images/categories_img_02.jpg" alt="" />
+                        <a class="btn hvr-hover" href="#">Ekologiczne owoce</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box">
+                        <img class="img-fluid" src="images/categories_img_03.jpg" alt="" />
+                        <a class="btn hvr-hover" href="#">Zdrowe przekąski</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Koniec kategorii produktów -->
+
+
+
+    <!-- Produkty -->
+    <div class="products-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title-all text-center">
+                        <h1>Owoce i warzywa</h1>
+                        <p>Najwyższej jakości produkty ekologiczne dla Ciebie i Twojej rodziny.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="special-menu text-center">
+                        <div class="button-group filter-button-group">
+                            <button class="active" data-filter="*">Wszystkie</button>
+                            <button data-filter=".top-featured">Najlepsze oferty</button>
+                            <button data-filter=".best-seller">Bestsellery</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row special-list">
+                <div class="col-lg-3 col-md-6 special-grid best-seller">
+                    <div class="products-single fix">
+                        <div class="box-img-hover">
+                            <div class="type-lb">
+                                <p class="sale">Wyprzedaż</p>
+                            </div>
+                            <img src="images/img-pro-01.jpg" class="img-fluid" alt="Image">
+                            <div class="mask-icon">
+                                <ul>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Podgląd"><i class="fas fa-eye"></i></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Porównaj"><i class="fas fa-sync-alt"></i></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Dodaj do listy życzeń"><i class="far fa-heart"></i></a></li>
+                                </ul>
+                                <a class="cart" href="#">Dodaj do koszyka</a>
+                            </div>
+                        </div>
+                        <div class="why-text">
+                            <h4>Marchew</h4>
+                            <h5> 30,00 zł</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 special-grid top-featured">
+                    <div class="products-single fix">
+                        <div class="box-img-hover">
+                            <div class="type-lb">
+                                <p class="new">Nowość</p>
+                            </div>
+                            <img src="images/img-pro-02.jpg" class="img-fluid" alt="Image">
+                            <div class="mask-icon">
+                                <ul>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Podgląd"><i class="fas fa-eye"></i></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Porównaj"><i class="fas fa-sync-alt"></i></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Dodaj do listy życzeń"><i class="far fa-heart"></i></a></li>
+                                </ul>
+                                <a class="cart" href="#">Dodaj do koszyka</a>
+                            </div>
+                        </div>
+                        <div class="why-text">
+                            <h4>Pomidory</h4>
+                            <h5> 35,00 zł</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 special-grid top-featured">
+                    <div class="products-single fix">
+                        <div class="box-img-hover">
+                            <div class="type-lb">
+                                <p class="sale">Wyprzedaż</p>
+                            </div>
+                            <img src="images/img-pro-03.jpg" class="img-fluid" alt="Image">
+                            <div class="mask-icon">
+                                <ul>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Podgląd"><i class="fas fa-eye"></i></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Porównaj"><i class="fas fa-sync-alt"></i></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Dodaj do listy życzeń"><i class="far fa-heart"></i></a></li>
+                                </ul>
+                                <a class="cart" href="#">Dodaj do koszyka</a>
+                            </div>
+                        </div>
+                        <div class="why-text">
+                            <h4>Winogrona</h4>
+                            <h5> 20,00 zł</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 special-grid best-seller">
+                    <div class="products-single fix">
+                        <div class="box-img-hover">
+                            <div class="type-lb">
+                                <p class="sale">Wyprzedaż</p>
+                            </div>
+                            <img src="images/img-pro-04.jpg" class="img-fluid" alt="Image">
+                            <div class="mask-icon">
+                                <ul>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Podgląd"><i class="fas fa-eye"></i></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Porównaj"><i class="fas fa-sync-alt"></i></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Dodaj do listy życzeń"><i class="far fa-heart"></i></a></li>
+                                </ul>
+                                <a class="cart" href="#">Dodaj do koszyka</a>
+                            </div>
+                        </div>
+                        <div class="why-text">
+                            <h4>Marakuja</h4>
+                            <h5> 40,00 zł</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Koniec produktów -->
+
+    <!-- Blog -->
+    <div class="latest-blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title-all text-center">
+                        <h1>Najnowsze wpisy na blogu</h1>
+                        <p>Odkryj nowości i inspiracje na temat zdrowego stylu życia i ekologii.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                    <div class="blog-box">
+                        <div class="blog-img">
+                            <img class="img-fluid" src="images/blog-img.jpg" alt="" />
+                        </div>
+                        <div class="blog-content">
+                            <div class="title-blog">
+                                <h3>5 zalet diety ekologicznej</h3>
+                                <p>Dowiedz się, jakie korzyści przynosi spożywanie ekologicznej żywności i dlaczego warto dbać o jakość swojego jedzenia.</p>
+                            </div>
+                            <ul class="option-blog">
+                                <li><a href="#"><i class="far fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fas fa-eye"></i></a></li>
+                                <li><a href="#"><i class="far fa-comments"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                    <div class="blog-box">
+                        <div class="blog-img">
+                            <img class="img-fluid" src="images/blog-img-01.jpg" alt="" />
+                        </div>
+                        <div class="blog-content">
+                            <div class="title-blog">
+                                <h3>Najlepsze przepisy z ekologicznych składników</h3>
+                                <p>Przygotuj smaczne i zdrowe potrawy z ekologicznych składników dostępnych w naszym sklepie.</p>
+                            </div>
+                            <ul class="option-blog">
+                                <li><a href="#"><i class="far fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fas fa-eye"></i></a></li>
+                                <li><a href="#"><i class="far fa-comments"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                    <div class="blog-box">
+                        <div class="blog-img">
+                            <img class="img-fluid" src="images/blog-img-02.jpg" alt="" />
+                        </div>
+                        <div class="blog-content">
+                            <div class="title-blog">
+                                <h3>Dlaczego warto wybrać ekologiczne produkty</h3>
+                                <p>Sprawdź, dlaczego produkty ekologiczne są korzystne dla zdrowia i środowiska.</p>
+                            </div>
+                            <ul class="option-blog">
+                                <li><a href="#"><i class="far fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fas fa-eye"></i></a></li>
+                                <li><a href="#"><i class="far fa-comments"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Koniec bloga -->
+
+    <!-- Instagram -->
+    <div class="instagram-box">
+        <div class="main-instagram owl-carousel owl-theme">
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-01.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-02.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-03.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-04.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-05.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-06.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Koniec Instagrama -->
+
+    <!-- Start Footer  -->
+    <footer>
+        <div class="footer-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-top-box">
+                            <h3>Godziny otwarcia</h3>
+                            <ul class="list-time">
+                                <li>Poniedziałek - Piątek: 08.00 - 17.00</li>
+                                <li>Sobota: 10.00 - 20.00</li>
+                                <li>Niedziela: <span>Zamknięte</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-top-box">
+                            <h3>Newsletter</h3>
+                            <form class="newsletter-box">
+                                <div class="form-group">
+                                    <input class="" type="email" name="Email" placeholder="Adres email*" />
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                                <button class="btn hvr-hover" type="submit">Zapisz się</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-top-box">
+                            <h3>Social Media</h3>
+                            <p>Śledź nas na portalach społecznościowych i bądź na bieżąco z nowościami.</p>
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-widget">
+                            <h4>O Freshshop</h4>
+                            <p>Nasz sklep dostarcza produkty najwyższej jakości, wspierające zdrowy i ekologiczny styl życia. Dbamy o to, aby każdy produkt pochodził od zaufanych dostawców i spełniał najwyższe standardy jakości.</p> 
+                            <p>Zaufaj nam i przekonaj się, jak ekologia może być wygodna i dostępna dla każdego.</p> 							
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-link">
+                            <h4>Informacje</h4>
+                            <ul>
+                                <li><a href="#">O nas</a></li>
+                                <li><a href="#">Obsługa klienta</a></li>
+                                <li><a href="#">Mapa strony</a></li>
+                                <li><a href="#">Regulamin</a></li>
+                                <li><a href="#">Polityka prywatności</a></li>
+                                <li><a href="#">Informacje o dostawie</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-link-contact">
+                            <h4>Kontakt</h4>
+                            <ul>
+                                <li>
+                                    <p><i class="fas fa-map-marker-alt"></i>Adres: Sękocin Stary uk. Leśników 100 <br>05-090<br> </p>
+                                </li>
+                                <li>
+                                    <p><i class="fas fa-phone-square"></i>Telefon: <a href="tel:+58 123 123 123">+58 123 123 123</a></p>
+                                </li>
+                                <li>
+                                    <p><i class="fas fa-envelope"></i>Email: <a href="mailto:contactinfo@gmail.com">contactinfo@gmail.com</a></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Koniec stopki  -->
+    
+    <!-- Początek praw autorskich  -->
+    <div class="footer-copyright">
+        <p class="footer-company">Wszelkie prawa zastrzeżone. &copy; 2024</p>
+    </div>
+    <!-- Koniec praw autorskich  -->
+    
+    <a href="#" id="back-to-top" title="Powrót na górę" style="display: none;">&uarr;</a>
+    
+    <!-- WSZYSTKIE PLIKI JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- WSZYSTKIE WTYCZKI -->
+    <script src="js/jquery.superslides.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/inewsticker.js"></script>
+    <script src="js/bootsnav.js."></script>
+    <script src="js/images-loded.min.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/baguetteBox.min.js"></script>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/custom.js"></script>
+    </body>
+    
+    </html>
